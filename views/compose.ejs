@@ -1,0 +1,14 @@
+
+<%-include('partials/header')-%>
+<body>
+    <div class="main-container">
+        <h2 class="page-title">Compose</h2>
+        <form class="text-input-form" action="/compose" method="POST">
+            <input class="post-title" type="text" name="postTitle" placeholder="Title"/>
+            <textarea rows="4" cols="20" class="post-subject" type="text" name="postSubject" placeholder="Subject"></textarea>
+            <input id="publish-input" class="btn-primary" type="submit" value="Publish"/>
+        </form>
+    </div>
+</body>
+<%-include('partials/footer')-%>
+</html>
