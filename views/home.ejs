@@ -7,8 +7,18 @@
         </div>
         <div class="start-publish-container">
             <a id="start-publish-input" class="btn-primary" href="/compose">Start Writing</a>
+            <a id="reset-input" class="btn-primary" href="/reset">Reset</a>
         </div>
-        <p><%=homeStartingContent%></p>
+        <div class="posts-container">
+            <% for(let post of postsArray){ %>
+            <a href="/posts/<%=post.postUrl%>">
+            <div class="post">
+                <h4 class="post-title"><%=post.postTitle%></h4>
+                <p class="post-subject"><%=post.postSubject%></p>
+            </div>
+            </a>
+            <% } %>
+        </div>
     </div>
 </body>
 <%-include('partials/footer')-%>

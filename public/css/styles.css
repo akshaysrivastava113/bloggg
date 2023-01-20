@@ -23,7 +23,8 @@ html {
     text-align: start;
 }
 .start-publish-container {
-    text-align: start;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 2rem;
 }
 #start-publish-input {
@@ -75,7 +76,6 @@ a {
     margin-bottom: 20px;
 }
 .btn-primary {
-    width: 5rem;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -84,13 +84,51 @@ a {
     font-size: 1rem;
     cursor: pointer;
 }
+.post {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 7%), 0 6px 20px 0 rgb(0 0 0 / 7%);
+    border-radius: 3px;
+}
+.post:hover {
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 20%);
+    cursor: pointer;
+}
 .post-title {
+    padding: 2px 0;
+    color: rgb(81, 171, 204);
+    /* color: rgb(114, 127, 218); */
+}
+.post-body {
+    padding: 5px 10px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 20%);
+}
+.post-body-title {
+    padding: 2px 0;
+    color: rgb(81, 171, 204);
+}
+.post-body-subject {
+    padding: 2px 0;
+}
+.post-subject {
+    padding: 2px 0;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+.post-subject:active {
+    color: black;
+}
+.post-title-input {
     height: 2rem;
     width: 100%;
     font-size: 16px;
     padding: 2px;
 }
-.post-subject {
+.post-subject-input {
     width: 100%;
     font-size: 16px;
     padding: 2px;
