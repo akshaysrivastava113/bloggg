@@ -1,7 +1,7 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const ejs = require('ejs');
-var _ = require('lodash');
+import express from 'express';
+import bodyParser from 'body-parser';
+import ejs from 'ejs';
+import _ from 'lodash';
 
 const app = express();
 
